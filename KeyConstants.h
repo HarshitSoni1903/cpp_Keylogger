@@ -8,7 +8,7 @@
 class KeyPair
 {
 public:
-    KeyPair(const std:: string &vk = "", const std::string &name = "") : VKName(VK), Name(name){}
+    KeyPair(const std:: string &vk = "", const std::string &name = "") : VKName(vk), Name(name){}
 
     std::string VKName;
     std::string Name;
