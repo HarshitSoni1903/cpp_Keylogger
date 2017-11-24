@@ -53,12 +53,17 @@ namespace Helper{
             return GetDateString() + " " + GetTimeString();
         }
     };
-template<class T>
-std::string ToString(const T &e){
-    std::ostringstream s;
-    s << e;
-    return s.str();
-}
-}
+    template<class T>
+    std::string ToString(const T &e){
+        std::ostringstream s;
+        s << e;
+        return s.str();
+    }
 
+    void WriteAppLog(const std::string &s){
+        std:ofstream file("Applog.txt", std::ios::app);
+        file<<"["<<Helper::DateTime().GetDateTimeString() << "]" << "\n" << s <<std::endl << "\n";
+        file.close();
+    }
+}
 #endif // HELPER_H
