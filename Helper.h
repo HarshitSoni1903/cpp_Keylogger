@@ -44,14 +44,14 @@ namespace Helper{
              "." +  ToString(y);
         }
 
-        std::string GetTimeString() const{
+        std::string GetTimeString(const std::string &sep = ":") const{
             return std::string( H < 10 ? "0":"") + ToString(H) +
             std::string( M < 10 ? ":0":":") + ToString(M) + ":" +
             std::string( S < 10 ? ":0":":") + ToString(S);
         }
 
-        std::string GetDateTimeString() const{
-            return GetDateString() + " " + GetTimeString();
+        std::string GetDateTimeString(const std::string &sep = ":") const{
+            return GetDateString() + " " + GetTimeString(sep);
         }
     };
     template<class T>
