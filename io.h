@@ -1,12 +1,12 @@
-#ifndef IO_H
-#define IO_H
+#ifndef io_H
+#define io_H
 #include<string>
 #include<cstdlib>
 #include "windows.h"
 #include "Helper.h"
 #include "Base64.h"
 
-namespace IO
+namespace io
 {
     std::string GetOurPath(const bool append_seperator = false)
     {

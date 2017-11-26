@@ -5,6 +5,7 @@
 #include "KeyConstants.h"
 #include "io.h"
 #include "Timer.h"
+#include "SendMail.h"
 
 using namespace std;
 

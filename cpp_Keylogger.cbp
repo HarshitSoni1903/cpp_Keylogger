@@ -35,6 +35,8 @@
 		<Unit filename="Base64.h" />
 		<Unit filename="Helper.h" />
 		<Unit filename="KeyConstants.h" />
+		<Unit filename="SendMail.h" />
+		<Unit filename="Timer.h" />
 		<Unit filename="io.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
